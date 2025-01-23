@@ -104,7 +104,7 @@ CONFIG_SCHEMA = cv.All(
             cv.Optional(CONF_CURRENT): sensor.sensor_schema(
                 unit_of_measurement=UNIT_AMPERE,
                 icon="mdi:current-dc",
-                accuracy_decimals=2,
+                accuracy_decimals=3,
                 device_class=DEVICE_CLASS_CURRENT,
                 state_class=STATE_CLASS_MEASUREMENT,
             ),
@@ -125,7 +125,7 @@ CONFIG_SCHEMA = cv.All(
              cv.Optional(CONF_TEMPERATURE): sensor.sensor_schema(
                 unit_of_measurement=UNIT_CELSIUS,
                 icon=ICON_THERMOMETER,
-                accuracy_decimals=0,
+                accuracy_decimals=1,
                 device_class=DEVICE_CLASS_TEMPERATURE,
                 state_class=STATE_CLASS_MEASUREMENT,
             ),
@@ -167,7 +167,7 @@ CONFIG_SCHEMA = cv.All(
             cv.Optional(CONF_AMP_HOUR_REMAIN): sensor.sensor_schema(
                 unit_of_measurement=UNIT_AMPER_HOURS,
                 icon=ICON_BATTERY,
-                accuracy_decimals=1,
+                accuracy_decimals=3,
                 device_class=DEVICE_CLASS_BATTERY,
                 state_class=STATE_CLASS_MEASUREMENT,
             ),
@@ -175,14 +175,14 @@ CONFIG_SCHEMA = cv.All(
             cv.Optional(CONF_AMP_HOUR_USED): sensor.sensor_schema(
                 unit_of_measurement=UNIT_AMPER_HOURS,
                 icon=ICON_BATTERY,
-                accuracy_decimals=1,
+                accuracy_decimals=3,
                 device_class=DEVICE_CLASS_BATTERY,
                 state_class=STATE_CLASS_MEASUREMENT,
             ),
             cv.Optional(CONF_AMP_HOUR_CHARGED): sensor.sensor_schema(
                 unit_of_measurement=UNIT_AMPER_HOURS,
                 icon=ICON_BATTERY,
-                accuracy_decimals=1,
+                accuracy_decimals=3,
                 device_class=DEVICE_CLASS_BATTERY,
                 state_class=STATE_CLASS_MEASUREMENT,
             ),
