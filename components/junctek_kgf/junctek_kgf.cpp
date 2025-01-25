@@ -20,7 +20,7 @@ esphome::optional<int> try_getval(const char*& cursor)
   }
   if (*end != ',' && *end != '.')
   {
-    ESP_LOGE("JunkTekKGF", "Error no coma %s", cursor);
+    ESP_LOGE("JunkTekKGF", "Error no comma %s", cursor);
     return nullopt;
   }
   cursor = end + 1; // Skip coma
